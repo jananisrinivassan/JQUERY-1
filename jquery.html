@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/admin/Downloads/jquery%20(1).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta checked="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>jQUERY</title>
+    <script src="./jquery_files/jquery.min.js.t�l�chargement"></script></head><body>"
+    <style>
+        .test{
+            background-color: blue;
+            color: aliceblue;
+            font-size: 1.5em;
+        }
+        .output{
+            background-color: aqua;
+            color: blueviolet;
+            font-size: 2em;
+            width: 23%;
+        }
+    </style>
+    
+    <h1>jquery</h1>
+    <p class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas assumenda officiis minus
+        laboriosam maxime voluptatibus doloremque, nam ipsum recusandae obcaecati rem culpa ea, fuga sapiente pariatur
+        cupiditate placeat quae ut.</p>
+    <div id="one">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe impedit hic dicta unde tempora inventore quos
+            culpa delectus fuga, neque qui nostrum cupiditate illo quis ea libero, necessitatibus officiis ratione!</p>
+    </div>
+    <div id="two">
+        <p class="abc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe impedit hic dicta unde tempora
+            inventore quos
+            culpa delectus fuga, neque qui nostrum cupiditate illo quis ea libero, necessitatibus officiis ratione!</p>
+    </div>
+    <!-- #three>ul>li#list${list $}*5
+       div#three>ul>li#list${list $}*5 -->
+    <div id="three">
+        <ul>
+            <li id="list1">list 1</li>
+            <li id="list2">list 2</li>
+            <li id="list3">list 3</li>
+            <li id="list4">list 4</li>
+            <li id="list5">list 5</li>
+        </ul>
+    </div>
+    <p>
+        <a href="./jquery_files/jquery.min.js.t�l�chargement" id="link1">texte page</a>
+    </p>
+
+    <div class="output">
+        output
+    </div>
+
+    <!-- button#btn${btn $}*5 -->
+    <button id="btn1">btn 1</button>
+    <button id="btn2">btn 2</button>
+    <button id="btn3">btn 3</button>
+    <button id="btn4">btn 4</button>
+    <button id="btn5">btn 5</button>
+
+    <script>
+        //     $(document).ready(function(){
+        //     $("#output".html("welcom to jquery"));
+        //  });
+
+        // $(function(){});
+        $(function () {
+            // $("#output").html("using jquery");
+            // $("#one").click(function(){
+                // alert("clicked");
+                // $(".para1").hide();
+            // })
+        // $("h1").click(function(){
+        //     console.log('h1 clicked');
+        //     $("p.abc").addClass("test")
+        // })
+
+        // $("h1").click(function(){
+        //     console.log('h1 clicked');
+        //     $("#three ul li#list3").addClass("test")
+        // })
+
+         $("#link1").click(function(event){
+            event.preventDefault();
+            // alert("page under construction");
+            // $("#linkh1").html("page under construction");
+            $(this).html("page under construction").addClass("test");
+         })
+
+           $("#list1").click(function(){
+            $(this).html("list1 selected")
+           })
+
+           $("#list2").dblclick(function(){
+            $(this).html("selected")
+           })
+
+           $("#list3").mouseenter(function(){
+            $(this).html("entered")
+           })
+
+           $("#list4").mouseleave(function(){
+            $(this).html("mouse leave").addClass("test")
+           })
+ 
+        //    hover ne gere que 2 fonctions : enter et leave.
+        //    $("#list5").hover(function(){
+        //     $(this).html("enter")
+        //    },function(){
+        //     $(this).html("leave")
+        //    });
+
+        // $("li").on({
+        //     mouseenter:function(){
+        //         $(this).css({color:"red","font-weigth":"bold"});
+
+        //     },
+        //     mouseleave:function(){
+        //         $(this).css({color:"blue"})
+        //     },
+        //     click:function(){
+        //         $(this).hide();
+        //     }
+        // })
+
+        // $("#btn1").click(function(){
+        //     $(".output").fadeTo(5000,0.).fadeTo( 4000,1)
+        // })
+        });
+
+    </script>
+
+</body></html>
